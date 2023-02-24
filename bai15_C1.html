@@ -8,98 +8,100 @@
 </head>
 <body>
     <h2>Contact Us</h2>
-    <fieldset>
-        <legend>Your Message</legend>
-        <table>
-            <tr>
-                <td><label for="emailTo">To</label></td>
-                <td><input type="text" name = "txtTo" readonly="readonly" id = "emailTo"size = "20" value="Example Cafe"></td>
+    <form action="">
+        <fieldset>
+            <legend>Your Message</legend>
+            <table>
                 <tr>
-                    <td><label for="emailFrom">Your email</label></td>
-                    <td><input type="text" name = "txtFrom" id = "emailFrom" size = "20" tabindex="1" maxlength="250"></td>
+                    <td><label for="emailTo">To</label></td>
+                    <td><input type="text" name = "txtTo" readonly="readonly" id = "emailTo"size = "20" value="Example Cafe"></td>
+                    <tr>
+                        <td><label for="emailFrom">Your email</label></td>
+                        <td><input type="text" name = "txtFrom" id = "emailFrom" size = "20" tabindex="1" maxlength="250"></td>
+                    </tr>
                 </tr>
-            </tr>
-            <tr>
-                <td><label for = "emailBody">Message</label></td>
-                <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
-            </tr>
-        </table>
-    </fieldset>
-    <fieldset>
-        <legend>How you found us:</legend>
-        <table>
-            <tr>
-                <td><label for = "howYourHear">How did you hear of us</label></td>
-                <td>
-                    <select name="advertise" id="advertise">
-                        <option value="google">Google</option>
-                        <option value="facebook">Facebook</option>
-                        <option value="twitter">Twitter</option>
-                    </select> 
-                </td>
-            </tr>
-            <tr>
-                <td><label for="newsletter">Newsletter</label></td>
-                <td><input type="checkbox" name = "newsletter"> <span>Ensure this box is checked if you would life to receive email updates</span><br></td>
-            </tr>
-        </table>
-    </fieldset>
-    <input type="button" value="Send messeage" style="margin-left: 0;">
-    <fieldset>
-        <legend><i>Contact Information</i></legend>
-        <table>
-            <tr>
-                <td><label for="firstName">First name:</label></td>
-                <td><input type="text" name = "firstName"></td>
-            </tr>
-            <tr>
-                <td><label for="lastName">Last name:</label></td>
-                <td><input type="text" name = "lastName"></td>
-            </tr>
-            <tr>
-                <td><label for="email">E-mail:</label></td>
-                <td><input type="text" name = "email"></td>
-            </tr>
-        </table>
-    </fieldset> 
-    <fieldset>
-        <legend><i>Competition Question</i></legend>
-        <p>How tall is the Eiffel Tower in Paris, France?</p>
-        <table>
-            <tr>
-                <td><input type="radio" name = "efTail" value="584_ft" id = "584"></td>
-                <td>
-                    <label for="584">584 ft</label>
-                </td>
-            <tr>
-                <td><input type="radio" name = "efTail" value="784_ft" id = "784"></td>
-                <td>
-                    <label for="784">784 ft</label>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="radio" name = "efTail" value="984_ft" id = "984"></td>
-                <td>
-                    <label for="1184">984 ft</label>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="radio" name = "efTail" value="1184_ft" id = "1184"></td>
-                <td>
-                    <label for="1184">1184 ft</label>
-                </td>
-            </tr>
-
-        </table>
-    </fieldset> 
-    <fieldset>
-        <legend><i>Tiebreaker Question</i></legend>
-        <p>In 25 words or less, say why you would like to win $10,000:</p>
-        <textarea name="tieQues" id="tieQues" cols="40" rows="10"></textarea>
-    </fieldset> 
-    <fieldset>
-        <legend><i>Enter Question</i></legend>
-        <input type="button" value="Enter Competition">
-    </fieldset> 
+                <tr>
+                    <td><label for = "emailBody">Message</label></td>
+                    <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>How you found us:</legend>
+            <table>
+                <tr>
+                    <td><label for = "howYourHear">How did you hear of us</label></td>
+                    <td>
+                        <select name="advertise" id="advertise">
+                            <option value="google">Google</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="twitter">Twitter</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="newsletter">Newsletter</label></td>
+                    <td><input type="checkbox" name = "newsletter"> <span>Ensure this box is checked if you would life to receive email updates</span><br></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="button" value="Send messeage" style="margin-left: 0;">
+        <fieldset>
+            <legend><i>Contact Information</i></legend>
+            <table>
+                <tr>
+                    <td><label for="firstName">First name:</label></td>
+                    <td><input type="text" name = "firstName"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Last name:</label></td>
+                    <td><input type="text" name = "lastName"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="text" name = "email"></td>
+                </tr>
+            </table>
+        </fieldset> 
+        <fieldset>
+            <legend><i>Competition Question</i></legend>
+            <p>How tall is the Eiffel Tower in Paris, France?</p>
+            <table>
+                <tr>
+                    <td><input type="radio" name = "efTail" value="584_ft" id = "584"></td>
+                    <td>
+                        <label for="584">584 ft</label>
+                    </td>
+                <tr>
+                    <td><input type="radio" name = "efTail" value="784_ft" id = "784"></td>
+                    <td>
+                        <label for="784">784 ft</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name = "efTail" value="984_ft" id = "984"></td>
+                    <td>
+                        <label for="1184">984 ft</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name = "efTail" value="1184_ft" id = "1184"></td>
+                    <td>
+                        <label for="1184">1184 ft</label>
+                    </td>
+                </tr>
+    
+            </table>
+        </fieldset> 
+        <fieldset>
+            <legend><i>Tiebreaker Question</i></legend>
+            <p>In 25 words or less, say why you would like to win $10,000:</p>
+            <textarea name="tieQues" id="tieQues" cols="40" rows="10"></textarea>
+        </fieldset> 
+        <fieldset>
+            <legend><i>Enter Question</i></legend>
+            <input type="button" value="Enter Competition">
+        </fieldset>
+    </form>
 </body>
 </html>
