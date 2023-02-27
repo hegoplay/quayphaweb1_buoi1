@@ -83,6 +83,44 @@
                 <label for="year">Year:</label>
                 <input type="text" name = "year" size = 5>
             </li>
+            <li>
+                <p>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)? </p>
+                <textarea name="mailAddress" id="mailAddress" cols="50" rows="4">
+Number/P.O. Box/Route: 
+Street/Avenue/Road: 
+City:
+State/Zip:
+                </textarea>
+            </li>
+            <li>
+                <label for="emailAddress">What is your email address?</label><br>
+                <input type="text" name ="emailAddress">
+            </li>
+            <li>
+                <p>Have you viewed our online product catalog?</p>
+                <input type="radio" name = "onlineCatalog" value ="yes"><label for="onlineCatalog">Yes</label>
+                <input type="radio" name = "onlineCatalog" value ="no"><label for="onlineCatalog">No</label>
+            </li>
+            <li>
+                <p>If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all that apply.)</p>
+                <input type="checkbox" id="checkbox1" name = "checkbox1" value="VCR">
+                <label for="checkbox1">VCR</label><br>
+                <input type="checkbox" id="checkbox2" name = "checkbox2" value="BSTV">
+                <label for="checkbox2">Big Screen TV</label><br>
+                <input type="checkbox" id="checkbox3" name = "checkbox3" value="audio">
+                <label for="checkbox3">Audio Equipment</label><br>
+                <input type="checkbox" id="checkbox4" name = "checkbox4" value="video">
+                <label for="checkbox4">Video Equipment</label><br>
+                <input type="checkbox" id="checkbox5" name = "checkbox5" value="camera">
+                <label for="checkbox5">Camera Equipment</label><br>
+                <input type="checkbox" id="checkbox6" name = "checkbox6" value="other">
+                <label for="other">Other</label>
+                <input type="text" placeholder="Please List">
+            </li>
+            <li>
+                <p>Do you have any questions, comments or suggestions before proceeding to the Order Form? </p>
+                <textarea name="QCS" id="QCS" cols="50" rows="6">Your Input:</textarea>
+            </li>
         </ol>
     </form>
     
