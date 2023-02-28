@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         input {
-            margin-bottom: 10px;
+            margin: 10px 0;
         }
         
         .slidecontainer {
@@ -43,6 +43,16 @@
         }
         /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
     </style>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
 </head>
 
 <body>
@@ -59,9 +69,30 @@
             <option value="512">512 (Low Grade)</option>
         </select>
         <div class="slidercontainer">
-            <input type="range" name="s1" id="s1" min="1" max="100" class="slider">
-
+            0<input type="range" name="s1" min="1" max="100" class="slider" id="myRange">100 <br>
+            <input type="text" name="txt1" id="demo" readonly> <br>
         </div>
+        <label for="bDay">Birthday:</label>
+        <input type="date" id="bDay" name="bDay"><br>
+        <label for="colr">Select your favorite color:</label>
+        <input type="color" name='colr' value='#FF0000'><br>
+        <label for="m-yBD">Birthday (month and year):</label>
+        <input type="month" name="m-yBD" id="m-yBD" placeholder="--------- ----"><br>
+        <label for="wBD">Select a week:</label>
+        <input type="week" name="wBD" id="wBD" placeholder="Week --, ----"><br>
+        <label for="timeBD">Select a time:</label>
+        <input type="time" name="timeBD" id="timeBD" placeholder="--:-- --"><br>
+        <label for="dt-birthday">Birthday (date and time)</label>
+        <input type="datetime-local" name="dt-birthday"><br>
+        <label for="email">E-mail:</label>
+        <input type="text" name="email"> <br>
+        <label for="search">Search Google:</label>
+        <input type="text" name="search" id="search"><br>
+        <label for="tele">Telephone:</label>
+        <input type="text" name="tele" id="tele"> <br>
+        <label for="homepage">Add your home page:</label>
+        <input type="text" name="homepage" id="homepage"> <br>
+        <input type="button" value="Submit">
     </form>
 </body>
 
