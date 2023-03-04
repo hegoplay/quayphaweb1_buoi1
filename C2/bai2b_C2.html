@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+        .metal {
+            position: relative;
+            margin:  auto;
+            color: transparent;
+            font-family: impact, sans-serif;
+            display: inline-block;
+            letter-spacing: 0.05em;
+            background-image: url('crimson.jpg');
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+          }
+          .glow {
+            font-size: 30px;
+            background-color: #00002F;
+            color: #1B82EA;
+            text-align: center;
+            display: inline-flex;
+            animation: glow 1s ease-in-out infinite alternate;
+          }
+          #colorful {
+            
+            display: inline-flex;
+            color: black;
+            text-shadow: -2px -4px 2px #D74C6E, 0px 5px 2px #82c52b,2px -3px 2px #E7C840;
+            background: none;
+          }
+          #inset{
+            display: inline-flex;
+            color :#752168;
+            text-shadow: 0.5px 0px #FFFFFF;
+            background-color: #D6B8B8;
+          }
+          #double{
+            display: inline-flex;
+            text-shadow: 0px -15px 2px #D63484;
+          }
+          #glossy{
+            display: inline-flex;
+            color:gold;
+            text-shadow: 0px 0px 0px #FFFFFF;
+          }
+          @-webkit-keyframes glow {
+            from {
+              text-shadow: 0 0 10px #1B82EA, 0 0 20px #1B82EA, 0 0 30px #0E61EA, 0 0 40px #0E61EA, 0 0 50px #0E61EA 0 0 60px #0E61EA, 0 0 70px #2080FF;
+            }
+            
+            to {
+              text-shadow: 0 0 20px #1B82EA, 0 0 30px #2080FF, 0 0 40px #2080FF, 0 0 50px #2080FF, 0 0 60px #2080FF, 0 0 70px #2080FF, 0 0 80px #2080FF;
+            }
+          }
+          
+    </style>
+</head>
+<body>
+    <div style="background-color: black;display: inline-flex;">
+        <p class="metal">
+            Grunge Style
+        </p>
+    </div>
+    <p class = "glow">
+        Neon Glow
+    </p>
+    <p id = "colorful">
+      Colorful Style
+    </p>
+    <p id="inset">
+      Inset Effect
+    </p>
+    <p id ="double" >
+      Double Font
+    </p>
+    <p id = "glossy">
+      Glossy Style
+    </p>
+</body>
+</html>
