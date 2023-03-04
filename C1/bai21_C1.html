@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Genos:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <style>
         *{
-            font-family: Arial, Helvetica, sans-serif;
+            
+            margin-left: 0;
+            margin-right: 0;
         }
         header{
             color:#585857;
@@ -23,15 +25,25 @@
             font-weight: normal;
         }
         nav{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
             height: 50px;
             background-color: #585857;
+            flex-direction: row;
+        }
+        section{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .option{
+            display: flex;
             align-items: center;
         }
-        .box{
+        .right{
             display: flex;
+            justify-content: right;
+            
+        }
+        .box{
+            display: inline-block;
             padding: 0px 17px;
             height: inherit;
             align-items: center;
@@ -70,6 +82,7 @@
         }
         
         .dropdown-content a {
+            text-align: left;
             color: black;
             padding: 12px 16px;
             text-decoration: none;
@@ -85,6 +98,25 @@
         .dropdown:hover .dropbtn {
             background-color: #8CC10C;
         }
+        .titleLeft{
+            display: inline-block;
+            width: 20%;
+            background-color: #F1F1F1;
+            height: 100%;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .titleLeft a{
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            margin: 2px;
+        }
+        section article{
+            display: inline-block;
+            width: 77.5%;
+            float:right;
+        }
     </style>
 </head>
 <body>
@@ -93,32 +125,104 @@
         <h4 class = subtitle>the world's largest web developer site</h4>
     </header>
     <nav>
-        <a href="#a" class="box">
-            <i class="fa-solid fa-house" style="font-size: large;color:#F2F2F2"></i>
-            
-        </a>
-        <a href="#a" class="box" style="background-color: #88cb1d;">
-            <p>HTML</p>
-        </a>
-        <a href="#a" class="box">
-            <p>CSS</p>
-        </a>
-        <a href="#a" class="box">
-            <p>JAVASCRIPT</p>
-        </a>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+        <div style="display: inline-block; width: 70%;padding-left: 0;">
+            <div class = "option">
+                <a href="#a" class="box">
+                    <p ><i class="fa-solid fa-house" style="color:#F2F2F2"></i></p>
+                    
+                </a>
+                <a href="#a" class="box" style="background-color: #88cb1d;">
+                    <p>HTML</p>
+                </a>
+                <a href="#a" class="box">
+                    <p>CSS</p>
+                </a>
+                <a href="#a" class="box">
+                    <p>JAVASCRIPT</p>
+                </a>
+                <div class="dropdown">
+                    <button class="dropbtn">Tutorial <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">REFERENCE <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">EXAMPLE <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                
+                
             </div>
         </div>
-        <a href="" class="box"></a>
-        <a href="" class="box"></a>
-        <a href="" class="box"></a>
-        <a href="" class="box"></a>
+        
+        <div style="display: inline-block; width: 29%;">
+            <div class = "right">
+                <a href="#g" class="box"><p><i class="fa-sharp fa-solid fa-earth-americas"></i></p></a>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </nav>
-    
+    <section>
+        <nav class = "titleLeft">
+            <p style="font-size: x-large;margin-bottom: 5px; margin-top:5px">HTML Tutorial</p>
+            <a href="">
+                HTML HOME
+            </a><br>
+            <a href="">HTML Introduction</a><br>
+            <a href="">HTML Editors</a><br>
+            <a href="">HTML Basic</a><br>
+            <a href="">HTML Elements</a><br>
+            <a href="">HTML Attributes</a><br>
+            <a href="">HTML Headings</a><br>
+            <a href="">HTML Paragraphs</a><br>
+            <a href="">HTML Styles</a><br>
+            <a href="">HTML Formatting</a><br>
+            <a href="">HTML Quotations</a><br>
+            <a href="">HTML Computercode</a><br>
+            <a href="">HTML Comments</a><br>
+            <a href="">HTML CSS</a><br>
+            <a href="">HTML Links</a><br>
+            <a href="">HTML Images</a><br>
+            <a href="">HTML Tables</a><br>
+            <a href="">HTML Lists</a><br>
+            <a href="">HTML Blocks</a><br>
+            <a href="">HTML Id</a><br>
+            <a href="">HTML Iframe</a><br>
+            <a href="">HTML Favicon</a><br>
+            <a href="">HTML Links</a><br>
+            <a href="">HTML Head</a><br>
+            <a href="">HTML Layout</a><br>
+            <a href="">HTML Style Guide</a><br>
+            <a href="">HTML Entities</a><br>
+            <a href="">HTML Symbols</a><br>
+            <a href="">HTML vs. XHTML</a><br>
+            <a href="">HTML Emojis</a><br>
+            <a href="">HTML Charset</a><br>
+        </nav>
+        <article>
+            <img src="res/ads.png" alt="" width="100%">
+            <p style="font-size: xx-large;">HTML(5) Tutorial</p>
+        </article>
+    </section>
 </body>
 </html>
