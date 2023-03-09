@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: block;
+            position: absolute;
+            top:0;
+            width:100% ;
+        }
+        body{
+            margin: 0;
+        }
+        ul{
+            padding:0;
+        }
+        li{
+            border: 0px;
+            list-style-type: none;
+            font-size: 25px;
+            display: inline;
+            width: 200px;
+            height: fit-content;
+        }
+        nav ul li a:link, nav ul li a:visited{
+            display: inline-block;
+            width: 190px;
+            background-color: #2F3036;
+            color:azure;
+            text-decoration: none;
+            height: 70px;
+        }
+        span{
+            display: inline-block;
+            margin:6px;
+        }
+        nav ul li a:hover,nav ul li a:active{
+            background-color: #90EE90;
+        }
+        li > ul{
+            display: none;
+        }
+        li:hover ul{
+            display: block;
+            position: absolute;
+            top:86px;
+            left:388px;
+        }
+        li:hover ul li a:link,li:hover ul li a:visited{
+            display:block;
+            padding-left: 10px;
+            
+        }
+        .submenu-selection:hover,.submenu-selection:active{
+            background-color: #19C589;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#a"><span>Home</span></a></li>
+            <li><a href="#a"><span>Introdution >></span></a></li>
+            <li><a href="#a" class = "submenu"><span>Portfolio</span> >></a>
+                <ul >
+                    <li ><a class = "submenu-selection" href="#a">Photography</a></li>
+                    <li ><a class = "submenu-selection" href="#a">Web & User Interface Design</a></li>
+                    <li ><a class = "submenu-selection" href="#a">Illustration</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="#a"><span>News</span></a></li>
+            <li><a href="#a"><span>Contact</span></a></li>
+        </ul>
+
+    </nav>
+</body>
+</html>
