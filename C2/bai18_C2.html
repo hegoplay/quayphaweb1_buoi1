@@ -21,8 +21,11 @@
             font-size: 25px;
         }
         a:link,a:visited{
+            display:inline-block;
+            height: 40px;
             color: white;
             text-decoration: none;
+            text-align: center;
         }
         a:hover{
             color: orange;
@@ -39,21 +42,21 @@
         }
         .submenu{
             display: inline-block;
-            margin-bottom: 16px;
+            margin-bottom: 0;
         }
         li:hover ul li a:link{
             display:block;
-            margin-left: -30px;
+            margin-left: 0px;
         }
     </style>
 </head>
 <body>
     <nav>
-        <ul>
+        <ul style="margin:0">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a class = "submenu"href="#">Product</a>
-                <ul>
+                <ul style="padding: 0;">
                     <li><a href="#">Engineering</a></li>
                     <li><a href="#">Telecom</a></li>
                     <li><a href="#">Energy</a></li>
