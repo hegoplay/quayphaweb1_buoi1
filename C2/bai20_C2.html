@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: block;
+            width: 100%;
+
+        }
+        ul{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        li{
+            display: flex;
+            width: 140px ;
+            height: fit-content;
+            text-decoration: none;
+            text-decoration-style: none;
+            
+        }
+        a{
+            text-align: center;
+        }
+
+        .menu-list a:link, .menu-list a:visited{
+            display: flex;
+            text-decoration: none;
+            color:purple;
+            height: fit-content;
+            width: inherit;
+            margin:5px;
+            padding: 10px;
+            border: 2px dashed white;
+            border-radius: 8px;
+            box-shadow: 5px 5px 1px #0D90DF, 5px -5px 1px #0D90DF,-5px 5px 1px #0D90DF,-5px -5px 1px #0D90DF; 
+            background-color:#0D90DF ;   
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .sub-menu{
+            position: absolute;
+            left: 140px;
+        }
+        .menu-list ul{
+            display:none
+        }
+        .menu-list:hover .sub-menu{
+            display:flex
+        }
+        .sub-menu-list{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul style="display: flex;">
+            <li class = "menu-list"><a href="#a">Home</a></li>
+            <li class = "menu-list"><a href="#a">Services</a></li>
+            <li class = "menu-list"><a href="#a">Products</a>
+                <ul class = sub-menu>
+                    <li class = "sub-menu-list"><a href="#a">Photography</a></li>
+                    <li class = "sub-menu-list"><a href="#a">Web & User Interface Design</a></li>
+                    <li class = "sub-menu-list"><a href="#a">Illustration</a></li>
+                </ul></li>
+            <li class = "menu-list"><a href="#a">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

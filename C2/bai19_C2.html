@@ -33,6 +33,9 @@
             color:azure;
             text-decoration: none;
             height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         span{
             display: inline-block;
@@ -51,21 +54,33 @@
             left:388px;
         }
         li:hover ul li a:link,li:hover ul li a:visited{
-            display:block;
+            display:flex;
             padding-left: 10px;
             
         }
         .submenu-selection:hover,.submenu-selection:active{
             background-color: #19C589;
         }
+        span{
+            width: 100%;
+            height: 100%;
+        }
+        ul{
+            display: flex;
+           
+
+        }
+        ul li{
+           
+        }
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#a"><span>Home</span></a></li>
-            <li><a href="#a"><span>Introdution >></span></a></li>
-            <li><a href="#a" class = "submenu"><span>Portfolio</span> >></a>
+        <ul >
+            <li><a href="#a">Home</a></li>
+            <li><a href="#a">Introdution >></a></li>
+            <li ><a href="#a" class = "submenu">Portfolio >></a>
                 <ul >
                     <li ><a class = "submenu-selection" href="#a">Photography</a></li>
                     <li ><a class = "submenu-selection" href="#a">Web & User Interface Design</a></li>
@@ -73,8 +88,8 @@
                 </ul>
             
             </li>
-            <li><a href="#a"><span>News</span></a></li>
-            <li><a href="#a"><span>Contact</span></a></li>
+            <li><a href="#a">News</a></li>
+            <li><a href="#a">Contact</a></li>
         </ul>
 
     </nav>
