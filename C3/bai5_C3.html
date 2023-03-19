@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n;
+        n = prompt("Nhap so luong nguoi phong ban","2")
+        let ds = new Array(100)
+        for(i = 0;i<n;i++){
+            ds[i] = prompt("Ten nguoi o phong ban thu " + i + ": ","")
+        }
+        ds.sort()
+        document.write("<h3> danh sach phong ban sau khi sap xep </h3><br>")
+        ds.forEach(a => document.write(a+"<br>"))
+
+    </script>
+</body>
+</html>

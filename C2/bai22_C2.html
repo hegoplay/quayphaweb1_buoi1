@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page layout</title>
+    <style>
+        h1{
+            position: fixed;
+            top:0px;
+            left:0px;
+            width:100%;
+            color: #ffffff; background-color: #666;
+            margin:0px; padding:10px;
+            height:60px; z-index:2;
+        }
+        div.nav{
+            z-index: 1;
+            position: absolute;
+            top:80px; left:0px;
+            width: 100px;
+            height: 300px;
+            padding:10px;
+            background-color: #d6d6d6;
+            
+        }
+        p.abstract{
+            font-weight: bold;       
+        }
+        div.nav::before{
+            content:"Navigation";
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Cascading Style Sheets</h1>
+    <div class="nav"><a href="#a" style="display:inline-block">Examples index</a></div>
+    <h2>CSS Positioning</h2>
+    <p class="abstract">
+        <img src="helmet.png" class="floatLeft" alt="wrox logo">
+        This article introduces the topic of laying out web pages in CSS using a combination of positioning schemes.
+    </p>
+    <p>CSS allows you to use three different positioning schemes to create complex layouts:</p>
+    <ul>
+        <li>Normal flow</li>
+        <li>Absolute positioning</li>
+        <li>Floating</li>
+    </ul>
+    <p>By using a combbination of thees shcemes you do not need to resort to using tables to lay out your pages.</p>
+</body>
+</html>

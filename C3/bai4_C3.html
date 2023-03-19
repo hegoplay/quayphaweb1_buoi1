@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let year;
+        let d = new Date();
+        let val = d.getFullYear();
+        do{
+            year = prompt("Nhap nam sinh","");
+        }
+        while(parseInt(year) >val || parseInt(year)<1800)
+        document.write(year)
+
+    </script>
+</body>
+</html>
