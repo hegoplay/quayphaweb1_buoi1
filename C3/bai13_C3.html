@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="inp" id="inp">
+        <button type="submit">check</button>
+    </form>
+    <script>
+        let inp = document.getElementById("inp");
+        let btn = document.getElementsByTagName('button')[0];
+        let pattern = /^[A-Z]/
+
+        btn.addEventListener('click', function (e) {
+            console.log(e);
+
+            if (!pattern.test(inp.value)) {
+                e.preventDefault();
+                alert('Sai dinh dang')
+            }
+        });
+    </script>
+
+</body>
+
+</html>
